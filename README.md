@@ -42,7 +42,7 @@ cd go-service
 go run process.go
 
 
-Note: For all the aboce you need Node.js, python adn go to be installed in system.
+Note: For all the aboce you need Node.js, python and go to be installed in system.
 
 
 ORCHESTRATION USING DOCKER AND DOCKER COMPOSE
@@ -67,8 +67,14 @@ TESTING THE FLOW
 From the Terminal
 
 NOTE: USING Curl - NEED curl installed in your system
+If you are testing locally
 
-curl -X POST -H "Content-Type: application/json" -d '{"numbers": [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]}' http://127.0.0.1:8000/process-data
+curl -X POST -H "Content-Type: application/json" -d '{"numbers": [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]}' http://127.0.0.1:8000/process-data     
+
+If you are testing on a remote server
+Note: Please open port 8000-8002 in your remote server
+
+curl -X POST -H "Content-Type: application/json" -d '{"numbers": [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]}' http://<remote-ip>:8000/process-data 
 
 OUTPUT:
 
