@@ -1,0 +1,23 @@
+version: '3'
+services:
+  node-service:
+    build:
+      context: ./node-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+
+  python-service:
+    build:
+      context: ./python-service
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+
+  go-service:
+    build:
+      context: ./go-service
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8002"
+

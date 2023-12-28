@@ -1,0 +1,14 @@
+{
+  "name": "input-service",
+  "version": "1.0.0",
+  "description": "Node.js service for processing data",
+  "main": "input.js",
+  "scripts": {
+    "start": "node input.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.1"
+  }
+}
+
